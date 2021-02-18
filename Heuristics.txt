@@ -1,0 +1,35 @@
+--------------------------------
+
+==== HEURISTICS USED ====
+
+--------------------------------
+
+*** 15 TILE SLIDING PUZZLE ***
+
+-> The states are defined as a list of lenght "16". Each value corresponds to the value of the tiles in the 15 sliding tile. 
+-> "b" represents the blank state. 
+-> There were 12 possible moves for each of the 4 options (up, Down, Left, Right).
+
+-> Let (X1, Y1) be the coordinates of a tile in Start state.
+and (X2, Y2) be the coordinates of the respective tile in Goal state.
+(** These coordinates are positions corresponding the 15 tile problem)
+
+(** Using either of the following we get the distance a particular tile has to displaced to reach the goal state.)
+
+=> Manhattan distance : Abs(X1 - X2) + Abs(Y1 - Y2)
+=> Euclidean distance : Sqrt( Sqr(X1 - X2) + Sqr(X1 - X2))
+
+-> Summing up all the heuristic values (Manhattan/Euclidean distance) of the 15 indvidual tile, we get the heuristic function of the puzzle.
+
+---------------------------------
+
+*** VAMPIRE-WEREWOLF PUZZLE ***
+
+-> The states are represented by a list of 5 elements.
+[Werewolves_west, Vampires_west, Werewolves_east, Vampires_east, Side].
+
+-> Given the safe states in the problem, I gave condition such that the MOVE always respects these.
+
+-> The heuristic function is the No. of members (Vampires + Werewolves) on the goal side/ size of the boat.
+
+---------------------------------

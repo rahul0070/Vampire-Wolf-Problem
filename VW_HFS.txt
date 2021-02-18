@@ -1,0 +1,17 @@
+Running BestFS on Vamp-Wolf puzzle...
+
+Solution path is:
+[3,3,0,0,west]
+[2,2,1,1,east]
+[2,3,1,0,west]
+[0,3,3,0,east]
+[1,3,2,0,west]
+[1,1,2,2,east]
+[2,2,1,1,west]
+[2,0,1,3,east]
+[3,0,0,3,west]
+[1,0,2,3,east]
+[2,0,1,3,west]
+[0,0,3,3,east]
+
+Execution took 8 ms.
